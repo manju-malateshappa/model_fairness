@@ -11,11 +11,14 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(expressSanitizer());
 
+// comment start
 
 // youtube video to watch for hosting a heroku app
 
 // https://www.google.com/search?client=safari&rls=en&q=how+to+host+a+website+using+heroku+app&ie=UTF-8&oe=UTF-8#kpvalbx=_nyaSXoKdILG70PEPr_S6sAQ36
 
+
+// coomet end
 
 //=========HomePage========
 app.get("/",(req,res)=>{
