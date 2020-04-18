@@ -43,6 +43,13 @@ app.get("/dashboards/4", (req,res) => {
     res.render("dashboards/dashboard4")
 });
 
+app.get("/dashboards/5", (req,res) => {
+    res.render("dashboards/dashboard5")
+});
+
+app.get("/dashboards/6", (req,res) => {
+    res.render("dashboards/dashboard6")
+});
 
 
 //=================

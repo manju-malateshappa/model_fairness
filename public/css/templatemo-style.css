@@ -335,7 +335,8 @@ http://www.templatemo.com/tm-509-hydro
     overflow: hidden;
     padding-top: 10em;
     text-align: left;
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+    height: fit-content;
+    /* clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%); */
   }
 
   #home h1 {
