@@ -25,8 +25,8 @@ http://www.templatemo.com/tm-509-hydro
   }
 
   h1 {
-    color: #292929;
-    font-size: 3em;
+    color: #d64747;
+    font-size: 4em;
     margin-bottom: 30px;
   }
 
@@ -518,6 +518,58 @@ http://www.templatemo.com/tm-509-hydro
     color: #ffffff;
   }
 
+
+  .div-with-bg1 {
+    background-image: url("../images/plots/Features_Importance");
+    /* background: #ffffff; */
+    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1); */
+    /* border-radius: 3px; */
+    /* text-align: left; */
+    margin-bottom: 30px;
+    height: 350px;
+  }
+
+  .div-with-bg2 {
+    background-image: url("../images/plots/Datapoint_edit_b4.png");
+    /* background: #ffffff; */
+    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1); */
+    /* border-radius: 3px; */
+    /* text-align: left; */
+    margin-bottom: 30px;
+    height: 350px;
+  }
+
+
+  .div-with-bg3 {
+    background-image: url("../images/home.jpeg");
+    background-repeat: no-repeat;
+    /* background-size: 1440px 1080px; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .div-with-bg4 {
+    background-image: url("../images/cover.jpg");
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    /* background-size: 1440px 1080px; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.3;
+  }
+  span {
+    background: black;
+    color: white;
+  }
+
   .blog-thumb {
     background: #ffffff;
     -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -637,7 +689,7 @@ http://www.templatemo.com/tm-509-hydro
   }
 
   #contact .section-title h2 {
-    color: #ffffff;
+    color: #d64747;
   }
 
   .google-map {

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <title>Team: Run time Error! - Model Fairness & Transperancy</title>
+    <title>Team Run time Error! - Model Fairness & Transperancy</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="description" content="">
@@ -48,10 +48,10 @@
                 <li><a href="/" class="smoothScroll">Home</a></li>
             </ul>
 
-            <ul class="nav navbar-nav navbar-right">
+            <!-- <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
                 <li><a href="#"><i class="fa fa-github"></i></a></li>
-            </ul>
+            </ul> -->
         </div>
 
     </div>
@@ -62,11 +62,18 @@
 <section id="blog-header" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin-top: -15px;">
 
-            <div class="col-md-offset-1 col-md-5 col-sm-12">
-                <h2> Title of the page </h2>
+            <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                <h1 style="color: lightgoldenrodyellow; text-align: center;"> Understanding the Model Transperancy using Google WIT </h1>
+                <p style="font-family: monospace;color: #ece038;font-size: x-large;"> It is an interactive visual tool that is designed to investigate the Machine Learning models.</p>
+                <p style="font-family: monospace;color: #ece038;font-size: x-large;"> It enables the understanding of a Classification or Regression model by enabling people to examine, evaluate, and compare machine learning models.</p>
+                <p style="font-family: monospace;color: #ece038;font-size: x-large;"> Due to its user-friendly interface and less dependency on complex coding, everyone from a developer, a product manager, a researcher or a student can use it for their purpose. </p>
+                <p style="font-family: monospace;color: #ece038;font-size: x-large;"> To learn more about google What IF TOOL, please click the link -  <a href="https://pair-code.github.io/what-if-tool/">WIT on github</a></p>
             </div>
+            <!-- <div class="col-md-offset-1 col-md-5 col-sm-12">
+                <p> The SHAP value plot show the positive and negative relationships of the predictors with the target variable. The code shap.summary_plot(shap_values, X_train)produces the following plot</p>
+            </div> -->
 
         </div>
     </div>
@@ -76,32 +83,189 @@
 <!-- BLOG DETAIL -->
 <section id="blog-detail" data-stellar-background-ratio="0.5">
     <div class="container">
+        <h1 style="color: #de2727;"> Datapoint Editor Tab </h1>
         <div class="row">
+
+            <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                <!-- <h1 style="color: #de2727;"> Image showing prediction of a randomly selected data-point(The key observations are highlighted with the square brackets) </h1> -->
+                <ul style="list-style-type:square;">
+                    <!-- <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"></p></li> -->
+                    <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">This tab provides useful techniques like editing the data points to see the change in predictions Finding Nearest Counterfactuals, show similarity to the selected datapoint  and  get more insights about the models prediction on the data points</p></li>
+                    <!-- <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">The code shap.summary_plot(shap_values, X_train) produces the following plot.</p></li> -->
+                </ul>
+                <!-- <p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"> The SHAP value plot show the positive and negative relationships of the predictors with the target variable.</p>
+                <p style="font-family: monospace;color:#0d5d0e;font-size: x-large;"> The code shap.summary_plot(shap_values, X_train) produces the following plot.</p> -->
+            </div>
 
             <div class="col-md-offset-1 col-md-10 col-sm-12">
                 <!-- BLOG THUMB -->
                 <div class="blog-detail-thumb">
                     <div class="blog-image">
-                        <img src="../images/plots/shap.png" class="img-responsive" alt="" style="height: 100%; width: 100%">
+                        <img src="../images/plots/Datapoint_edit_b4.png" class="img-responsive" alt="" style="height: 100%; width: 100%">
                         <!-- <div class='tableauPlaceholder' id='viz1575449526467' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='LocationwiseListingsbasedonSentimentScore&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div> -->
                 </div>
+
+                <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                    <h2 style="color: #de1a1ae6;"> The above Image shows prediction of a randomly selected data-point(The key observations are highlighted with the square brackets).</h2>
+                    <h2 style="color: #de1a1ae6;"> It demonstrates the following information:</h2>
+                    <ul style="list-style-type:circle;">
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Selected a random datapoint and the value for the feature race – “African_American” is 1 and “native_American” is 0</p></li>
+                        <li><p style="font-family: monospace;color:#0c1158;font-size: x-large;">The model’s prediction for label 1 is 0.595 and prediction for label 0 is 0.405</p></li>
+                        <!-- <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Original value: Color shows whether that variable is high (in red) or low (in blue) for that observation.</p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Correlation: A high level of the “decile_score” content has a high and positive impact on the recidivism within two years prediction. The “high” comes from the red color, and the “positive” impact is shown on the X-axis. Similarly, we will say the “sex_ Female” is negatively correlated with the target variable.</p></li> -->
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12">
+                <!-- BLOG THUMB -->
+                <div class="blog-detail-thumb">
+                    <div class="blog-image">
+                        <img src="../images/plots/data_point_edit_A4.png" class="img-responsive" alt="" style="height: 100%; width: 100%">
+                        <!-- <div class='tableauPlaceholder' id='viz1575449526467' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='LocationwiseListingsbasedonSentimentScore&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div> -->
+                </div>
+
+                <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                    <h2 style="color: #de1a1ae6;"> Image showing the change in prediction (The key observations are highlighted with the square brackets).</h2>
+                    <h2 style="color: #de1a1ae6;"> It demonstrates the following information:</h2>
+                    <ul style="list-style-type:circle;">
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Now the data point feature  value for race – “African_American” is set to 0 and “native_American” is set to 1 so as to see the changes in the prediction.</p></li>
+                        <li><p style="font-family: monospace;color:#0c1158;font-size: x-large;">The model’s prediction for label 1 is 0.428 and prediction for label 0 is 0.572</p></li>
+                        <!-- <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Original value: Color shows whether that variable is high (in red) or low (in blue) for that observation.</p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Correlation: A high level of the “decile_score” content has a high and positive impact on the recidivism within two years prediction. The “high” comes from the red color, and the “positive” impact is shown on the X-axis. Similarly, we will say the “sex_ Female” is negatively correlated with the target variable.</p></li> -->
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12">
+                <!-- BLOG THUMB -->
+                <!-- <div class="blog-detail-thumb">
+                    <div class="blog-image">
+                        <img src="../images/plots/data_point_edit_A4.png" class="img-responsive" alt="" style="height: 100%; width: 100%">
+                        <div class='tableauPlaceholder' id='viz1575449526467' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='LocationwiseListingsbasedonSentimentScore&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>
+                </div> -->
+
+                <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                    <h2 style="color: #1b867ce6;font-size: large;font-family: sans-serif;"> If we have used threshold value 0.5 for classification of the two labels, we can clearly see that model would predict 1 for the above data point if the race is “African_American” and 0 if the race is “native_American”.</h2>
+                    <h2 style="color: #30861be6;font-family: cursive;">"We have inspected many data points with all the techniques and found out that models prediction for African_American race is biased."</h2>
+                    <!-- <ul style="list-style-type:circle;">
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Now the data point feature  value for race – “African_American” is set to 0 and “native_American” is set to 1 so as to see the changes in the prediction.</p></li>
+                        <li><p style="font-family: monospace;color:#0c1158;font-size: x-large;">The model’s prediction for label 1 is 0.428 and prediction for label 0 is 0.572</p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Original value: Color shows whether that variable is high (in red) or low (in blue) for that observation.</p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Correlation: A high level of the “decile_score” content has a high and positive impact on the recidivism within two years prediction. The “high” comes from the red color, and the “positive” impact is shown on the X-axis. Similarly, we will say the “sex_ Female” is negatively correlated with the target variable.</p></li>
+                    </ul> -->
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <h1 style="color: #de2727;"> Performance & Fairness Tab</h1>
+            <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                <!-- <h1 style="color: #de2727;"> SHAP Force Plot on Individual value</h1> -->
+                <ul style="list-style-type:square;">
+                    <!-- <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"></p></li> -->
+                    <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">This tab allows us to look at the overall model performance using confusion matrices and ROC curves.</p></li>
+                    <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">We can edit a decision threshold and evaluate the model’s performance instantly and find out the best suitable threshold.</p></li>
+                    <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">The tool can optimally set the decision threshold for the two subsets while taking into account any of a number of constraints related to algorithmic fairness such as demographic parity or equal opportunity.</p></li>
+                </ul>
+                <!-- <p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"> In the plot, each Shapley value is an arrow that pushes to increase (positive value) or decrease (negative value) the prediction.</p>
+                <p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"> These forces balance each other out at the actual prediction of the data instance.</p>
+                <p style="font-family: monospace;color:#0d5d0e;font-size: x-large;"> The code shap.force_plot(explainer.expected_value, shap_values_gb[0,:], X_train[0,:]) produces the following plot.</p> -->
+            </div>
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12">
+                <!-- BLOG THUMB -->
+                <div class="blog-detail-thumb">
+                    <div class="blog-image">
+                        <img src="../images/plots/Model_performance.png" class="img-responsive" alt="" style="height: 100%; width: 100%; margin-top: 30px">
+                        <!-- <div class='tableauPlaceholder' id='viz1575449526467' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='LocationwiseListingsbasedonSentimentScore&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div> -->
+                </div>
+
+                <!-- <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;"></p></li> -->
+
+
+                <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                    <h2 style="color: #de1a1ae6;"> The above image shows the model performance when the data is sliced based on the feature “race African American” against the ground truth feature the “recidivism within two years” and the model’s algorithmic fairness is set to demographic parity. </h2>
+                    <h2>The following observations were made (The key observations are highlighted with the square brackets):</h2>
+                    <ul style="list-style-type:circle;">
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The model’s accuracy towards the data points with value 1 for “race African American” is 59.3% and the gives 40% False predictions.</p></li>
+                        <li><p style="font-family: monospace;color:#0c1158;font-size: x-large;">The model’s accuracy towards the data points with value 0 for “race African American” is 69.3% and the gives 31% False predictions.</p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The tool picks different decision thresholds (0.83 and 0.53) to achieve algorithmic fairness (demographic parity).</p></li>
+                        <!-- <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The “base value” (see the grey print towards the upper-left of the image) marks the model’s average prediction over the training set.</p></li> -->
+                        <!-- <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;"> The “output value” is the model’s prediction: probability -1.89 </p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The feature values for the largest effects are printed at the bottom of the plot</p></li> -->
+                    </ul>
+                </div>
+
             </div>
         </div>
 
+ 
+
+        <div class="row">
+            <h1 style="color: #de2727;"> Features Tab</h1>
+            <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                <!-- <h1 style="color: #de2727;"> SHAP Force Plot on Individual value</h1> -->
+                <ul style="list-style-type:square;">
+                    <!-- <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"></p></li> -->
+                    <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">The features tab gives the summary statistics of each of the features in the dataset including histograms, quantile charts, bar charts etc. </p></li>
+                    <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">The tab also enables to look into the distribution of values for each feature in the dataset.</p></li>
+                    <!-- <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">The tool can optimally set the decision threshold for the two subsets while taking into account any of a number of constraints related to algorithmic fairness such as demographic parity or equal opportunity.</p></li> -->
+                </ul>
+                <!-- <p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"> In the plot, each Shapley value is an arrow that pushes to increase (positive value) or decrease (negative value) the prediction.</p>
+                <p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"> These forces balance each other out at the actual prediction of the data instance.</p>
+                <p style="font-family: monospace;color:#0d5d0e;font-size: x-large;"> The code shap.force_plot(explainer.expected_value, shap_values_gb[0,:], X_train[0,:]) produces the following plot.</p> -->
+            </div>
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12">
+                <!-- BLOG THUMB -->
+                <div class="blog-detail-thumb">
+                    <div class="blog-image">
+                        <img src="../images/plots/Features.png" class="img-responsive" alt="" style="height: 100%; width: 100%; margin-top: 30px">
+                        <!-- <div class='tableauPlaceholder' id='viz1575449526467' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='LocationwiseListingsbasedonSentimentScore&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div> -->
+                </div>
+
+                <!-- <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;"></p></li> -->
+
+
+                <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                    <h2 style="color: #de1a1ae6;"> The above image shows the distribution of data in the featureset. </h2>
+                    <h2>We infer that “sex_female” is very non-uniform, with most datapoints having being set to 0.</h2>
+                    <!-- <ul style="list-style-type:circle;">
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The model’s accuracy towards the data points with value 1 for “race African American” is 59.3% and the gives 40% False predictions.</p></li>
+                        <li><p style="font-family: monospace;color:#0c1158;font-size: x-large;">The model’s accuracy towards the data points with value 0 for “race African American” is 69.3% and the gives 31% False predictions.</p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The tool picks different decision thresholds (0.83 and 0.53) to achieve algorithmic fairness (demographic parity).</p></li> -->
+                        <!-- <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The “base value” (see the grey print towards the upper-left of the image) marks the model’s average prediction over the training set.</p></li> -->
+                        <!-- <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;"> The “output value” is the model’s prediction: probability -1.89 </p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The feature values for the largest effects are printed at the bottom of the plot</p></li> -->
+                    <!-- </ul> -->
+                </div>
+
+            </div>
+        </div>
+        
     </div>
     </div>
 </section>
-
-
+<div id="conclude_id" style="
+    margin-bottom: 30px;
+    background-color: antiquewhite;
+">
+    <h2 style="text-align: justify;font-family: monospace;color: #e08d0e;">Conclusion: WIT is a pretty handy tool which gives the ability to probe the models. Simply creating and training a model isn’t the purpose of Machine Learning but understanding why and how that model was created is Machine Learning in true sense. With the help of the WIT, we were able to identify the bias in the data, evaluate the performance and fairness of the ML model. </h2>
+</div>
 <!-- FOOTER -->
 <footer data-stellar-background-ratio="0.5">
     <div class="container">
-        <div class="row">
+        <div class="row" style="width: max-content;">
 
-            <div class="col-md-5 col-sm-12">
+            <div class="col-md-5 col-sm-12" style="width: 2000px;">
                 <div class="footer-thumb footer-info">
                     <h2>Team: Run time Error! - Model Fairness & Transperancy</h2>
-                    <p>Chidambaram Allada, Vignesh,  Urvi and Manju Malatesh</p>
+                    <p>Chidambaram Allada, Vignesh Vaidyanathan,  Urvi Chauhan and Manju Malatesh</p>
                 </div>
             </div>
 
@@ -117,9 +281,6 @@
 <script src="/js/jquery.magnific-popup.min.js"></script>
 <script src="/js/smoothscroll.js"></script>
 <script src="/js/custom.js"></script>
-
-
-<script type='text/javascript'>var divElement = document.getElementById('viz1575449191612');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
 
 </body>
 </html>

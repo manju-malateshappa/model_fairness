@@ -48,10 +48,10 @@
                 <li><a href="/" class="smoothScroll">Home</a></li>
             </ul>
 
-            <ul class="nav navbar-nav navbar-right">
+            <!-- <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
                 <li><a href="#"><i class="fa fa-github"></i></a></li>
-            </ul>
+            </ul> -->
         </div>
 
     </div>
@@ -62,11 +62,18 @@
 <section id="blog-header" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
+        <!-- <div class="row" style="margin-top: -15px;"> -->
         <div class="row">
 
-            <div class="col-md-offset-1 col-md-5 col-sm-12">
-                <h2> Title of the page </h2>
+            <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                <h1 style="color: lightgoldenrodyellow; text-align: center;"> Understanding the Model Transperancy using SHAP values </h1>
+                <p style="font-family: monospace;color: #ece038;font-size: x-large;"> SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model.</p>
+                <p style="font-family: monospace;color: #ece038;font-size: x-large;">  It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions.</p>
+                <p style="font-family: monospace;color: #ece038;font-size: x-large;"> To learn more about SHAP, please click the link -  <a href="https://github.com/slundberg/shap#citations">shap on github</a></p>
             </div>
+            <!-- <div class="col-md-offset-1 col-md-5 col-sm-12">
+                <p> The SHAP value plot show the positive and negative relationships of the predictors with the target variable. The code shap.summary_plot(shap_values, X_train)produces the following plot</p>
+            </div> -->
 
         </div>
     </div>
@@ -78,30 +85,132 @@
     <div class="container">
         <div class="row">
 
+            <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                <h1 style="color: #de2727;"> The SHAP value plot </h1>
+                <ul style="list-style-type:square;">
+                    <!-- <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"></p></li> -->
+                    <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">The SHAP value plot show the positive and negative relationships of the predictors with the target variable.</p></li>
+                    <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">The code shap.summary_plot(shap_values, X_train) produces the following plot.</p></li>
+                </ul>
+                <!-- <p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"> The SHAP value plot show the positive and negative relationships of the predictors with the target variable.</p>
+                <p style="font-family: monospace;color:#0d5d0e;font-size: x-large;"> The code shap.summary_plot(shap_values, X_train) produces the following plot.</p> -->
+            </div>
+
             <div class="col-md-offset-1 col-md-10 col-sm-12">
                 <!-- BLOG THUMB -->
                 <div class="blog-detail-thumb">
                     <div class="blog-image">
-                        <img src="../images/plots/shap1.png" class="img-responsive" alt="" style="height: 100%; width: 100%">
+                        <img src="../images/plots/Features_Importance" class="img-responsive" alt="" style="height: 100%; width: 100%">
                         <!-- <div class='tableauPlaceholder' id='viz1575449526467' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='LocationwiseListingsbasedonSentimentScore&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div> -->
                 </div>
+
+                <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                    <h2 style="color: #de1a1ae6;"> This plot is made of all the dots in the train data. It demonstrates the following information: </h2>
+                    <ul style="list-style-type:circle;">
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Feature importance: Variables are ranked in descending order.</p></li>
+                        <li><p style="font-family: monospace;color:#0c1158;font-size: x-large;">Impact: The horizontal location shows whether the effect of that value is associated with a higher or lower prediction</p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Original value: Color shows whether that variable is high (in red) or low (in blue) for that observation.</p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Correlation: A high level of the “decile_score” content has a high and positive impact on the recidivism within two years prediction. The “high” comes from the red color, and the “positive” impact is shown on the X-axis. Similarly, we will say the “sex_ Female” is negatively correlated with the target variable.</p></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
 
+        <div class="row">
+
+            <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                <h1 style="color: #de2727;"> SHAP Force Plot on Individual value</h1>
+                <ul style="list-style-type:square;">
+                    <!-- <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"></p></li> -->
+                    <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">In the plot, each Shapley value is an arrow that pushes to increase (positive value) or decrease (negative value) the prediction.</p></li>
+                    <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">These forces balance each other out at the actual prediction of the data instance.</p></li>
+                    <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">The code shap.force_plot(explainer.expected_value, shap_values_gb[0,:], X_train[0,:]) produces the following plot.</p></li>
+                </ul>
+                <!-- <p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"> In the plot, each Shapley value is an arrow that pushes to increase (positive value) or decrease (negative value) the prediction.</p>
+                <p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"> These forces balance each other out at the actual prediction of the data instance.</p>
+                <p style="font-family: monospace;color:#0d5d0e;font-size: x-large;"> The code shap.force_plot(explainer.expected_value, shap_values_gb[0,:], X_train[0,:]) produces the following plot.</p> -->
+            </div>
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12">
+                <!-- BLOG THUMB -->
+                <div class="blog-detail-thumb">
+                    <div class="blog-image">
+                        <img src="../images/plots/Individual_SHAP_Value_Plot.png" class="img-responsive" alt="" style="height: 100%; width: 100%; margin-top: 30px">
+                        <!-- <div class='tableauPlaceholder' id='viz1575449526467' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='LocationwiseListingsbasedonSentimentScore&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div> -->
+                </div>
+
+                <!-- <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;"></p></li> -->
+
+
+                <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                    <h2 style="color: #de1a1ae6;"> This plot is made for the first item in the training data. It demonstrates the following information: </h2>
+                    <ul style="list-style-type:circle;">
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The Red arrows represent feature effects (SHAP values) that drives the prediction value higher.</p></li>
+                        <li><p style="font-family: monospace;color:#0c1158;font-size: x-large;">The blue arrows are those effects that drive the prediction value lower.</p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">Each arrow’s size represents the magnitude of the corresponding feature’s effect.</p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The “base value” (see the grey print towards the upper-left of the image) marks the model’s average prediction over the training set.</p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;"> The “output value” is the model’s prediction: probability -1.89 </p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The feature values for the largest effects are printed at the bottom of the plot</p></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                <h1 style="color: #de2727;"> SHAP Dependency Plot</h1>
+
+                <ul style="list-style-type:square;">
+                <!-- <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;"></p></li> -->
+                <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">Provides visualization about how a single feature effects the output of the model.</p></li>
+                <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">we can plot the SHAP value of that feature vs. the value of the feature for all the examples in a dataset to see this visualization.</p></li>
+                <li><p style="font-family: monospace;color: #0d5d0e;font-size: x-large;">The code shap.dependence_plot('priors_count', shap_values[0], train_data[:200]) produces the following plot.</p></li>
+            </div>
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12">
+                <!-- BLOG THUMB -->
+                <div class="blog-detail-thumb">
+                    <div class="blog-image">
+                        <img src="../images/plots/Dependency_priors_count1.png" class="img-responsive" alt="" style="height: 100%; width: 100%; margin-top: 30px">
+                        <!-- <div class='tableauPlaceholder' id='viz1575449526467' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='LocationwiseListingsbasedonSentimentScore&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LocationwiseListingsbasedonSentimentScore&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div> -->
+                </div>
+
+                <!-- <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;"></p></li> -->
+
+
+                <div class="col-md-offset-1 col-md-5 col-sm-12" style="width: auto;">
+                    <h2 style="color: #de1a1ae6;"> 
+                        This plot is made for the feature 'priors_count'. It demonstrates the following information:</h2>
+                    <ul style="list-style-type:circle;">
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The relationship between the target variable, “two-year recidivism” and the “priors_count” of the crimes of a person is linear.</p></li>
+                        <li><p style="font-family: monospace;color:#0c1158;font-size: x-large;">There is a positive trend between the target variable, “two-year recidivism” and the “priors_count” of the crimes of a person.</p></li>
+                        <li><p style="font-family: monospace;color: #0c1158;font-size: x-large;">The feature “priors_count” interacts frequently with the feature “age” in the data model.</p></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
     </div>
     </div>
 </section>
-
-
+<div id="conclude_id" style="
+    margin-bottom: 30px;
+    background-color: antiquewhite;
+">
+    <h2 style="text-align: justify;font-family: monospace;color: #e08d0e;">To conclude, we have made an effective use of SHAP library to understand the importance of features and the effect of data points on the model prediction. This help us too explain the model Transperancy to the stake-holders. </h2>
+</div>
 <!-- FOOTER -->
 <footer data-stellar-background-ratio="0.5">
     <div class="container">
-        <div class="row">
+        <div class="row" style="width: max-content;">
 
             <div class="col-md-5 col-sm-12">
                 <div class="footer-thumb footer-info">
                     <h2>Team: Run time Error! - Model Fairness & Transperancy</h2>
-                    <p>Chidambaram Allada, Vignesh,  Urvi and Manju Malatesh</p>
+                    <p>Chidambaram Allada, Vignesh Vaidyanathan,  Urvi Chauhan and Manju Malatesh</p>
                 </div>
             </div>
 
@@ -118,8 +227,6 @@
 <script src="/js/smoothscroll.js"></script>
 <script src="/js/custom.js"></script>
 
-
-<script type='text/javascript'>var divElement = document.getElementById('viz1575449526467');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
 
 </body>
 </html>
